@@ -30,7 +30,6 @@ cite,
 code,
 del,
 dfn,
-em,
 img,
 ins,
 kbd,
@@ -139,6 +138,10 @@ body,
 html {
     height: 100vh;
     display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #181818;
 }
 
 /*-------------------------------------------------------------------------LEFT--------------------------------------------------------------*/
@@ -146,27 +149,27 @@ html {
 .image {
     flex: 1;
     background-position: center;
-    background-image: url(images/jorgen-hendriksen-AKKoNkG3PJU-unsplash.jpg);
+    background-image: url(images/mak-vnlx943Ytn8-unsplash.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 }
 
-.image div{
+.image div {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: blue;
     padding: 15px 0;
-    margin-top: 14.25rem;
+    margin-top: 14.4rem;
 }
 
-.logo{
+.logo {
     height: 10vh;
 }
 
-.image p{
+.image p {
     position: relative;
     top: 60vh;
     text-align: center;
@@ -183,12 +186,12 @@ html {
 /*          #TOP             */
 
 .top {
-    padding: 10rem 16rem 2rem 4rem;
-    background-color: red;
+    padding: 9rem 16rem 2rem 4rem;
+    /* background-color: #EEF2E6; */
+    background-color: #F1F1F1;
 }
 
 .top p {
-    color: black;
     font-size: 24px;
 }
 
@@ -198,11 +201,24 @@ html {
 
 /*          #MIDDLE (FORM)           */
 
+h1{
+    font-size: 28px;
+    font-family: 'Kalam', cursive;
+}
+
+label{
+    font-size: 14px;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
 form {
     display: flex;
     flex-direction: column;
     padding: 2rem 4rem 4rem 4rem;
     gap: 2rem;
+    /* background-color: #D6CDA4; */
+    background-color: #E2DCC8;
 }
 
 fieldset {
@@ -222,7 +238,8 @@ fieldset div {
 
 .bottom {
     padding: 2rem 4rem 4rem 4rem;
-    background-color: red;
+    /* background-color: #EEF2E6; */
+    background-color: #F1F1F1;
     margin: auto 0;
     flex: 1;
     display: inline-block;
@@ -230,12 +247,25 @@ fieldset div {
 
 .bottom p {
     margin: 1rem 0 0;
+    letter-spacing: 3px;
 }
 
 /*          FOOTER          */
 
+fa{
+    height: 32px;
+    width: 32px;
+}
+
+.footer span{
+    font-size: 28px;
+}
+
 .footer {
-    padding: 24px;
-    background-color: white;
-    text-align: center;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
 }
