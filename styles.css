@@ -5,52 +5,237 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-HTML5 display-role reset for older browsers 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} 
 
-body, html{
+HTML5 display-role reset for older browsers article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body,
+html {
     height: 100vh;
     display: flex;
 }
 
+/*-------------------------------------------------------------------------LEFT--------------------------------------------------------------*/
+
+.image {
+    flex: 1;
+    background-position: center;
+    background-image: url(images/jorgen-hendriksen-AKKoNkG3PJU-unsplash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.image div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding: 15px 0;
+    margin-top: 14.25rem;
+}
+
+.logo{
+    height: 10vh;
+}
+
+.image p{
+    position: relative;
+    top: 60vh;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------RIGHT--------------------------------------------------------------*/
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    max-width: 62%;
+}
+
+/*          #TOP             */
+
+.top {
+    padding: 10rem 16rem 2rem 4rem;
+    background-color: red;
+}
+
+.top p {
+    color: black;
+    font-size: 24px;
+}
+
+.top>p {
+    margin-bottom: 2rem;
+}
+
+/*          #MIDDLE (FORM)           */
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem 4rem 4rem;
+    gap: 2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-right: 8rem;
+}
+
+/*          #BOTTOM         */
+
+.bottom {
+    padding: 2rem 4rem 4rem 4rem;
+    background-color: red;
+    margin: auto 0;
+    flex: 1;
+    display: inline-block;
+}
+
+.bottom p {
+    margin: 1rem 0 0;
+}
+
+/*          FOOTER          */
+
+.footer {
+    padding: 24px;
+    background-color: white;
+    text-align: center;
+}
