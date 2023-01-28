@@ -160,18 +160,27 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    padding: 15px 0;
-    margin-top: 14.4rem;
+    background-color: rgba(171, 194, 112, 0.4);
+    padding: 24px 0;
+    /* opacity: 0.1; */
+    margin-top: 13.2rem;
 }
 
 .logo {
-    height: 10vh;
+    height: 8vh;
+}
+
+.logo+span {
+    color: #007234;
+    font-size: 50px;
+    margin-left: 14px;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
 .image p {
     position: relative;
-    top: 60vh;
+    top: 62vh;
+    color: #F1F1F1;
     text-align: center;
 }
 
@@ -226,7 +235,7 @@ form {
 
     color: #F1F1F1;
 
-    border-radius: 3px;
+    border-radius: 1px;
 }
 
 .middle input[type="text"],
@@ -314,7 +323,8 @@ fieldset div {
 
 .middle input::placeholder {
     font-size: 13px;
-    color: #ABC270;
+    color: #181818;
+    opacity: 0.3;
 }
 
 /*------------------------------------------------------------------------------------#BOTTOM-----------------------------------------------------------------------------*/
@@ -373,12 +383,12 @@ fieldset div {
 /*----------------------------------------------------------------------------------------FOOTER--------------------------------------------------------------------------*/
 
 fa {
-    height: 32px;
-    width: 32px;
+    height: 28px;
+    width: 28px;
 }
 
 .footer span {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Cinzel Decorative', cursive;
 }
 
