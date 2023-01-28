@@ -219,11 +219,12 @@ form {
     padding: 2rem 4rem 3rem 4rem;
     gap: 2rem;
     /* background-color: #D6CDA4; */
-    background-color: #E2DCC8;
+    background-color: #ABC270;
     box-shadow: -2px 4px 6px 1px rgba(26, 18, 11, 0.4);
     position: relative;
     z-index: 1;
 
+    color: #F1F1F1;
 
     border-radius: 3px;
 }
@@ -307,7 +308,7 @@ fieldset div {
 .middle input:valid+span::before{
     content: "✓";
     opacity: 0.6;
-    color: green;
+    color: #ABC270;
 } 
 
 .middle input::placeholder{
@@ -338,7 +339,7 @@ fieldset div {
     margin: 1.5rem 5px 5px;
     width: 30%;
 
-    border: 4px solid #0F3D3E;
+    border: 4px solid #ABC270;
     border-radius: 8px;
 
     font-size: 18px;
@@ -346,16 +347,24 @@ fieldset div {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
 
-    background-color: #0F3D3E;
+    background-color: #ABC270;
     color: #F1F1F1;
 }
 
 .btn:hover{
     background-color: #F1F1F1;
-    color: #0F3D3E;    
+    color: #ABC270;    
 
     transition: 0.4s;
     cursor: pointer;
+}
+
+.bottom a, .image a{
+    text-decoration: none;
+
+    color: #ABC270;
+
+    font-weight: 700;
 }
 
 /*          FOOTER          */
@@ -367,6 +376,7 @@ fa {
 
 .footer span {
     font-size: 28px;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
 .footer {
@@ -377,3 +387,9 @@ fa {
     justify-content: center;
     align-items: center;
 }
+
+.footer a{
+    color: #181818;
+    text-decoration: none;
+}
+
