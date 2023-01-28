@@ -46,39 +46,45 @@
         </div>
 
         <div class="middle">
-            <form action="" method="get">
+            <form action="" method="get" id="form_signUp">
                 <h1> Let's do this!</h1>
                 <fieldset>
                     <div>
                         <label for="fname">FIRST NAME</label>
-                        <input type="text" name="first-name" id="fname" required>
+                        <input type="text" name="fname" id="fname" required placeholder="First Name">
+                        <span></span>
                     </div>
                     <div>
                         <label for="lname">LAST NAME</label>
-                        <input type="text" name="last-name" id="lname" required>
+                        <input type="text" name="last-name" id="lname" required placeholder="Last Name">
+                        <span></span>
                     </div>
                     <div>
                         <label for="mail">EMAIL</label>
-                        <input type="email" name="mail" id="mail" required>
+                        <input type="email" name="mail" id="mail"  placeholder="Eg.: zerak@gmail.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" required>
+                        <span></span>
                     </div>
                     <div>
                         <label for="phn_nmbr">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phn_nmbr" required>
+                        <input type="tel" name="phone" id="phn_nmbr" maxlength="10" minlength="10" required placeholder="Phone Number">
+                        <span></span>
                     </div>
                     <div>
                         <label for="pass">PASSWORD</label>
-                        <input type="password" name="pass" id="pass">
+                        <input type="password" name="pass" id="pass" minlength="10"  placeholder="Password" required>
+                        <span></span>
                     </div>
                     <div>
                         <label for="cpass">CONFIRM PASSWORD</label>
-                        <input type="password" name="cpass" id="cpass">
+                        <input type="password" name="cpass" id="cpass" placeholder="Confirm Password" required>
+                        <span></span>
                     </div>
                 </fieldset>
             </form>
         </div>
 
         <div class="bottom">
-            <button type="button">Create Account</button>
+            <button type="submit" form="form_signUp">Create Account</button>
             <p>Already have an Account ? Log in </p>
         </div>
         <div class="footer">
