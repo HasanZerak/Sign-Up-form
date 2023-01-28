@@ -20,7 +20,7 @@ h5,
 h6,
 p,
 blockquote,
-pre, 
+pre,
 a,
 abbr,
 acronym,
@@ -144,7 +144,7 @@ html {
     color: #181818;
 }
 
-/*-------------------------------------------------------------------------LEFT--------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------LEFT--------------------------------------------------------------------------------*/
 
 .image {
     flex: 1;
@@ -175,7 +175,7 @@ html {
     text-align: center;
 }
 
-/*--------------------------------------------------------------------------RIGHT--------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------RIGHT--------------------------------------------------------------------------------*/
 
 .sign-up {
     display: flex;
@@ -192,31 +192,31 @@ html {
 }
 
 .top p {
-    font-size: 24px;
+    font-size: 19px;
 }
 
 .top>p {
     margin-bottom: 2rem;
 }
 
-/*          #MIDDLE (FORM)           */
+/*------------------------------------------------------------------------------#MIDDLE (FORM)----------------------------------------------------------------------------*/
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 label {
     font-size: 12px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     line-height: 1;
-    font-weight: 500;
-    opacity: 0.8;
+    font-weight: 700;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    padding: 2rem 4rem 3rem 4rem;
+    padding: 1.7rem 4rem 2.5rem 4rem;
     gap: 2rem;
     /* background-color: #D6CDA4; */
     background-color: #ABC270;
@@ -234,8 +234,8 @@ form {
 .middle input[type="email"],
 .middle input[type="password"] {
     -webkit-appearance: none;
-    -moz-appearance:    none;
-    appearance:         none;
+    -moz-appearance: none;
+    appearance: none;
 
     border-radius: 8px;
     border: 1px solid rgba(15, 61, 62, 0.3);
@@ -245,7 +245,7 @@ form {
 
     width: 20rem;
     padding: 8px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 fieldset {
@@ -261,65 +261,66 @@ fieldset div {
     margin-right: 4rem;
 }
 
-.middle input:hover{
+.middle input:hover {
     box-shadow: 0px 0px 2px 2px rgba(101, 136, 100, 0.5);
 }
 
-.middle input:invalid:focus{
+.middle input:invalid:focus {
     border: 1px solid #D55C5F;
     color: #D55C5F;
     box-shadow: none;
 }
 
-.middle input+span{
+.middle input+span {
     position: relative;
 }
 
-.middle input+span::before{
+.middle input+span::before {
     position: absolute;
     right: -20px;
     top: -29px;
 }
 
-  .middle input[type="tel"]+span::after, .middle input[type="password"]+span::after {
-    font-size: 0.7rem;
+.middle input[type="tel"]+span::after,
+.middle input[type="password"]+span::after {
+    font-size: 0.6rem;
     position: absolute;
     top: 0;
     left: 1px;
-  }
+}
 
-.middle input:invalid:focus+span::before{
+.middle input:invalid:focus+span::before {
     content: "❗";
     opacity: 0.7;
     color: #D55C5F;
 }
 
-.middle input[type="tel"]:invalid:focus+span::after{
+.middle input[type="tel"]:invalid:focus+span::after {
     content: "Must have exactly 10 digits";
     color: #D55C5F;
 }
 
-.middle input[type="password"]:invalid:focus+span::after{
+.middle input[type="password"]:invalid:focus+span::after {
     content: "Should have mininmum 10 characters";
     color: #D55C5F;
     letter-spacing: 1.5px;
 }
 
-.middle input:valid+span::before{
+.middle input:valid+span::before {
     content: "✓";
     opacity: 0.6;
     color: #ABC270;
-} 
-
-.middle input::placeholder{
-    letter-spacing: 2px;
-    opacity: 0.3;
 }
 
-/*          #BOTTOM         */
+.middle input::placeholder {
+    font-size: 13px;
+    color: #ABC270;
+}
+
+/*------------------------------------------------------------------------------------#BOTTOM-----------------------------------------------------------------------------*/
 
 .bottom {
-    padding: 2rem 4rem 4rem 4rem;
+    padding: 2rem 4rem 2rem 4rem;
     /* background-color: #EEF2E6; */
     background-color: #F1F1F1;
     margin: auto 0;
@@ -330,19 +331,20 @@ fieldset div {
 .bottom p {
     margin: 1rem 0 0;
     letter-spacing: 3px;
+    font-size: 14px;
 }
 
-.btn{
+.btn {
     appearance: none;
 
-    padding: 14px 16px;
-    margin: 1.5rem 5px 5px;
-    width: 30%;
+    padding: 14px 14px;
+    margin: 1.5rem 5px 3px;
+    width: 28%;
 
     border: 4px solid #ABC270;
     border-radius: 8px;
 
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1.5px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
@@ -351,15 +353,16 @@ fieldset div {
     color: #F1F1F1;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #F1F1F1;
-    color: #ABC270;    
+    color: #ABC270;
 
     transition: 0.4s;
     cursor: pointer;
 }
 
-.bottom a, .image a{
+.bottom a,
+.image a {
     text-decoration: none;
 
     color: #ABC270;
@@ -367,7 +370,7 @@ fieldset div {
     font-weight: 700;
 }
 
-/*          FOOTER          */
+/*----------------------------------------------------------------------------------------FOOTER--------------------------------------------------------------------------*/
 
 fa {
     height: 32px;
@@ -375,7 +378,7 @@ fa {
 }
 
 .footer span {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -388,8 +391,7 @@ fa {
     align-items: center;
 }
 
-.footer a{
+.footer a {
     color: #181818;
     text-decoration: none;
 }
-
